@@ -1,0 +1,23 @@
+module ha_tb;
+  //inputs
+	reg a;
+	reg b;
+
+	// Outputs
+	wire s;
+	wire c;
+	ha ha1 (s,c,a,b
+	);
+
+	initial
+	begin
+			$monitor(a,b,s,c);
+		
+		a = 0;
+		b = 0;
+		#10 b=1;
+		#10 a=1 ; b=0;
+		#10 b=1;
+		  end 
+endmodule
+
